@@ -37,4 +37,4 @@ export const comments: CommentType[] = [
     replies: []
   }
 ]
-
+export default comments;
