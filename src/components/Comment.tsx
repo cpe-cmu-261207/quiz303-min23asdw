@@ -14,6 +14,17 @@ const Comment = (props:any) => {
     console.log(data);
     return <Replies key = {index} value = {data} / > ;
   })
+  
+  const likeshow = ()=> {
+    if (likeNum>=0){
+        
+        <p className='text-gray-500'>{likeNum}</p>
+      
+    }
+      
+    
+  }
+    
     return (
     
 
@@ -28,7 +39,8 @@ const Comment = (props:any) => {
                         
                             <div className='flex items-center'>
                               <img className='w-4 h-4 mr-1' src='/like.svg'></img>
-                              <p className='text-gray-500'>{likeNum}</p>
+                              {likeshow}
+                              
                             </div>
                       </div>
                     </div>
