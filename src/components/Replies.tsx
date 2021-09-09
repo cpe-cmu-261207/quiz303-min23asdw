@@ -8,12 +8,11 @@ type CommentType = {
 const Replies = (props:any) => {
   console.log(props.value)
 const {username,userImagePath,commentText,likeNum,replies} = props.value;
-  
+  console.log(likeNum)
 const likeshow = ()=> {
-  if (likeNum>=0){
+  if (likeNum.value > -1){
       
-      <p className='text-gray-500'>{likeNum}</p>
-    
+      <p className='text-gray-500'>{likeNum}</p>  
   }
     
   
@@ -27,7 +26,7 @@ const likeshow = ()=> {
         <p>{commentText}</p>
               <div className='flex items-center'>
                 <img className='w-4 h-4 mr-1' src='/like.svg'></img>
-                {likeshow}
+                <p className='text-gray-500'>{likeNum}</p>  
               </div>
       </div>
     </div>
