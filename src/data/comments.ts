@@ -2,7 +2,7 @@ export type CommentType = {
   username: string;
   userImagePath: string;
   commentText: string;
-  likeNum: number;
+  likeNum?: number;
   replies: CommentType[]
 }
 
