@@ -13,8 +13,8 @@ function App() {
 
           {/* image and name */}
           <div className="flex space-x-2 items-center">
-            <img className="w-12 h-12 rounded-full" src="/profileImages/handsome.jpg"></img>
-            <span className='font-semibold text-lg'>Chayanin Suatap 610631100</span>
+            <img className="w-12 h-12 rounded-full" src="/profileImages/Gong.png"></img>
+            <span className='font-semibold text-lg'>Pongsakorn Rattanapan 630610749</span>
           </div>
 
           {/* status message */}
